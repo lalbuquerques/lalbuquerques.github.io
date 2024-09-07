@@ -1,0 +1,92 @@
+# Creating a basic HTML structure with CSS based on the described color scheme and text content.
+html_content = """
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page - Programa Estagiar Globo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #008080; /* Aqua or teal color from the PDF */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #008080;
+        }
+        .experience, .program-importance, .contribution {
+            margin-bottom: 40px;
+        }
+        .placeholder {
+            border: 2px dashed #008080;
+            padding: 20px;
+            text-align: center;
+            font-style: italic;
+            color: #555;
+        }
+        footer {
+            background-color: #004d4d; /* Darker teal color */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>One Page - Programa Estagiar Globo</h1>
+        <p>[Seu Nome Completo]</p>
+    </header>
+
+    <section class="experience">
+        <h2>Sobre a Experiência</h2>
+        <div class="placeholder">[Espaço reservado para o texto sobre a experiência]</div>
+        <div class="placeholder">[Espaço reservado para imagem ou gráfico]</div>
+    </section>
+
+    <section class="program-importance">
+        <h2>Importância do Programa</h2>
+        <div class="placeholder">[Espaço reservado para o texto sobre a importância do programa]</div>
+        <div class="placeholder">[Espaço reservado para imagem ou gráfico]</div>
+    </section>
+
+    <section class="contribution">
+        <h2>Contribuições para a Equipe</h2>
+        <div class="placeholder">[Espaço reservado para o texto sobre suas contribuições]</div>
+        <div class="placeholder">[Espaço reservado para imagem ou gráfico]</div>
+    </section>
+
+    <footer>
+        <p>Portfólio: <a href="https://seulinkdeportfolio.com" target="_blank">Clique aqui</a></p>
+    </footer>
+</body>
+</html>
+"""
+
+# Save the content to an HTML file
+output_file_path = "/mnt/data/one_page_estagiar_globo.html"
+with open(output_file_path, "w") as file:
+    file.write(html_content)
+
+output_file_path
