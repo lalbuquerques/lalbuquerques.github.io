@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #fff;
+    --purple: #8A2387;
+    --pink: #E94057;
+    --orange: #F27121;
+    --black: #000000;
+}
+
+body {
+    background-color: var(--white);
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    gap: 1rem;
+}
+
+header {
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: linear-gradient(to right, #fc5c7d, #6a82fb);
+}
+
+footer {
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--purple);
+}
+
+.box-img-header {
+    height: 100%;
+}
+
+.img-logo {
+    max-width: 60px;
+    height: auto;
+}
+
+.box-header {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr; 
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+section {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.first-section, .second-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    height: auto;
+}
+
+.first-section {
+    height: auto;
+    max-height: 400px;
+}
+
+.second-section {
+    margin-top: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+h2, h3 {
+    font-size: 1.2rem;
+    color: var(--purple);
+}
+
+strong {
+    background: linear-gradient(to right, #fc5c7d, #6a82fb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
+
+.fourth-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.img-grafico {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.title {
+    font-size: 1.2rem;
+    color: var(--purple);
+}
+
+.subtitle {
+    font-size: 1rem;
+    background: linear-gradient(to right, #fc5c7d, #6a82fb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+a {
+    color: var(--orange);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.impacto-section {
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.title-principal {
+    font-size: 1.5rem;
+    color: var(--purple);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.colunas-impacto {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+
+.coluna {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--pink);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.img-grafico {
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.video-experiencia {
+    max-width: 100%; 
+    height: auto; 
+    margin-top: 1rem; 
+    border-radius: 8px; 
+    cursor: pointer; 
+}
+
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1rem;
+    background: linear-gradient(to right, #fc5c7d, #6a82fb);
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.contato {
+    text-align: left;
+    flex: 1; 
+}
+
+.info-contato {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 1.5rem; 
+    flex: 2; 
+}
+
+.info-contato a, .info-contato p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.info-contato svg {
+    margin-right: 0.3rem; 
+}
+
+.info-contato .email, .info-contato .wpp {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+}
