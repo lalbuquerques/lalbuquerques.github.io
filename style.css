@@ -59,6 +59,14 @@ footer {
     align-items: center;
 }
 
+.img-profile {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 3px solid #fc5c7d; 
+}
+
 main {
     grid-row: 2 / 3;
     display: grid;
